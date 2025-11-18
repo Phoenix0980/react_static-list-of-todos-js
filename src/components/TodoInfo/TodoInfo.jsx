@@ -12,7 +12,14 @@ export const TodoInfo = ({ todo }) => {
         Status: {todo.completed ? 'Completed' : 'Pending'}
       </p>
 
-      {todo.user && <UserInfo user={todo.user} />}
+      {todo.user && <UserInfo user={todo.title} />}
+      <article className="TodoInfo TodoInfo--completed">
+        <h2 className="TodoInfo__title">CSS</h2>
+
+        <a className="UserInfo" href="mailto:Sincere@april.biz">
+          Leanne Graham
+        </a>
+      </article>
     </div>
   );
 };
